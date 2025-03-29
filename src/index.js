@@ -21,6 +21,7 @@ app.listen(port, () => {
   console.log(`Listening http://localhost:${port}`);
 });
 
+console.log ("Teste do Lucas");
 console.log ("Teste de Lucas 02-03-1992");
 
 module.exports = app;
