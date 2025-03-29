@@ -10,7 +10,7 @@ app.get('/api', (req, res) => {
 });
 
 app.get('/api/test', (req, res) => {
-  res.send({ message: 'Endpoint de teste na branch master com merge'});
+  res.json({ message: 'Endpoint de teste' });
 });
 
 app.get('/api/test-2', (req, res) => {
@@ -18,12 +18,10 @@ app.get('/api/test-2', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Listening http://localhost:${port}`);
+  console.log(`Listening on http://localhost:${port}`);
+
 });
 
-console.log ("Teste do Lucas");
-console.log ("Teste de Lucas 02-03-1992");
-console.log ("Erro Corrigido");
 
 
 module.exports = app;
